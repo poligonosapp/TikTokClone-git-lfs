@@ -1,3 +1,9 @@
+# v0.1.3
+https://docs.github.com/pt/repositories/working-with-files/managing-large-files/resolving-git-large-file-storage-upload-failures
+
+git lfs push --all origin
+
+Uploading LFS objects: 100% (63/63), 1.1 MB | 165 KB/s, done.
 # v0.1.2
 
 https://github.com/poligonosapp/leaflet.measure/blob/master/example.html
