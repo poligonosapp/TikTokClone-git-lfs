@@ -1,4 +1,8 @@
+# v0.1.2
 
+https://github.com/poligonosapp/leaflet.measure/blob/master/example.html
+
+# v0.1.1
 const window = document.defaultView;
 const s = "https://6089b4a9bea5c12f43c720b0--poligonosapp.netlify.app/api/v1";
 const z = 100;
