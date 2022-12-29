@@ -1,18 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
-
-import {allPostsQuery} from '../../../utils/queries';
-import { client } from '../../../utils/client';
-
-export default  async function handler(req: NextApiRequest, res: NextApiResponse){
-  if(req.method === 'GET'){
-    const query = allPostsQuery();
-    
-    const data = await client.fetch(query);
-    res.status(200).json(data); //pass the data back to the frontend
-  } else if(req.method === 'POST'){
-    const document = req.body;
-
-    client.create(document)
-      .then(()=>res.status(201).json('Video Created!'))
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f710b514267f810cb3b10c614c3c7490db5cbc32f03d9c5ffdf721c4a531dec
+size 604

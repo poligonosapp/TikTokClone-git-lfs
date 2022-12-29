@@ -1,26 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-import { uuid } from 'uuidv4';
-
-import { client } from '../../utils/client';
-
-export default  async function handler(req: NextApiRequest, res: NextApiResponse){
-  if(req.method === 'PUT'){
-    const {userId, postId, like} = req.body;
-
-    const data =
-    like ? await client
-        .patch(postId)
-        .setIfMissing({likes: []})
-        .insert('after','likes[-1]', [{
-            _key: uuid(),
-            _ref: userId
-        }])
-        .commit()
-    : await client 
-        .patch(postId)
-        .unset([`likes[_ref=="${userId}"]`])
-        .commit();
-
-    res.status(200).json(data);  
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:31c4c07045901157ddf9a808d282f0594facae61989da47764b9c8c5744750f3
+size 690

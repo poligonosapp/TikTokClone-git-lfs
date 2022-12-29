@@ -1,6 +1,3 @@
-export default {
-    name: 'postedBy',
-    title: 'PostedBy',
-    type: 'reference',//connect to difference documents
-    to: [{ type: 'user' }], //1 user can post multiple comments and we can keep track of who posted it
-  };
+version https://git-lfs.github.com/spec/v1
+oid sha256:53916bfd23d43f8b68c1283a26ecc46899c0bed4d53e6fa34f7a54474173dd13
+size 230

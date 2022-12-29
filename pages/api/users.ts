@@ -1,14 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-
-import { allUsersQuery } from './../../utils/queries';
-import { client } from '../../utils/client';
-
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  const data = await client.fetch(allUsersQuery());
-  
-  if(data) {
-    res.status(200).json(data);
-  } else {
-    res.json([]);
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e51e456397122573b5f411be169f86574e0b372ad24215a95791e57571f0c3c3
+size 393

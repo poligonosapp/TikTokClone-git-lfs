@@ -1,29 +1,3 @@
-{
-  "root": true,
-  "project": {
-    "name": "sanity-backend"
-  },
-  "api": {
-    "projectId": "ev2xb8ne",
-    "dataset": "production"
-  },
-  "plugins": [
-    "@sanity/base",
-    "@sanity/default-layout",
-    "@sanity/default-login",
-    "@sanity/desk-tool"
-  ],
-  "env": {
-    "development": {
-      "plugins": [
-        "@sanity/vision"
-      ]
-    }
-  },
-  "parts": [
-    {
-      "name": "part:@sanity/base/schema",
-      "path": "./schemas/schema"
-    }
-  ]
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:54f920000e859ed9027830109c5a0d8c6dfcbbd81c464f478046251ae042235c
+size 493

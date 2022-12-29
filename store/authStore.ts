@@ -1,28 +1,3 @@
-import create from 'zustand';
-import { persist } from 'zustand/middleware';
-import axios from 'axios';
-
-import { BASE_URL } from '../utils';
-
-const authStore = (set: any) => ({ //instant return: () not just {}
-    userProfile: null,
-    allUsers: [],
-
-    addUser: (user: any) => set({userProfile: user}),
-    removeUser: () => set({userProfile: null}),
-
-    fetchAllUsers: async () => {
-        const response = await axios.get(`${BASE_URL}/api/users`);
-    
-        set({ allUsers: response.data });
-    },
-});
-
-const useAuthStore = create(
-    persist(authStore, {
-        name: 'auth',
-    })
-)
-
-
-export default useAuthStore;
+version https://git-lfs.github.com/spec/v1
+oid sha256:78c4e129da34a52528eb507d59a1576bf8d32a754895607c6318c279b2e8b95d
+size 656
