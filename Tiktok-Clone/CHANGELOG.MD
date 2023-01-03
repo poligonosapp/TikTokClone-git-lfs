@@ -1,3 +1,5 @@
+# v0.1.6 
+https://stackoverflow.com/questions/40365440/react-leaflet-map-not-correctly-displayed
 # v0.1.5
 graphcms 
 https://github.com/willianjusten/my-trips
